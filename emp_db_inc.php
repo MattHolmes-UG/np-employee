@@ -4,7 +4,7 @@
 $host = 'localhost';  
 $user = 'root';  
 $passwd = '';  
-$schema = 'employee_db';  
+$schema = 'employee_management';  
 
 $pdo = NULL;  
 $dsn = 'mysql:host=' . $host . ';dbname=' . $schema;  
@@ -15,6 +15,6 @@ try {
 } 
 catch (PDOException $e) {   
     /* If there is an error an exception is thrown */    
-    echo 'Database connection failed.';    
+    echo 'Database connection failed.---';    
     die(); 
 } 

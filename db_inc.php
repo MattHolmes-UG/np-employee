@@ -7,7 +7,7 @@ $user = 'root';
 /* MySQL account password */ 
 $passwd = '';  
 /* The schema you want to use */ 
-$schema = 'mySchema';  
+$schema = 'myschema';  
 /* The PDO object */ 
 $pdo = NULL;  
 /* Connection string, or "data source name" */ 
@@ -21,6 +21,6 @@ try {
 } 
 catch (PDOException $e) {   
     /* If there is an error an exception is thrown */    
-    echo 'Database connection failed.';    
+    echo "Database connection failed.";
     die(); 
 } 
